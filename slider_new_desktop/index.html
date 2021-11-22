@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba slider</title>
+</head>
+<body>
+
+<style>
+    body {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:column;
+    }
+    .contenedor-slider {
+        width: 1280px;
+        height: 600px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        position: relative;
+        overflow: hidden;
+        
+    }
+
+    .slide-item {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+       overflow: hidden;
+       transition: 2s;
+       cursor: pointer;
+    }
+
+    .slide-item img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+       
+    }
+
+    .controls-btn-left, .controls-btn-right  {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background-color: rgba(255, 242, 242, 0.568);
+        border: none;
+
+        z-index: 100;
+        
+    }
+
+    .controls-btn-left img,
+    .controls-btn-right img {
+        width: 40%;
+    }
+
+    .controls-btn-right  {
+        right:  10px;
+        background-color: rgba(255, 242, 242, 0.39);
+
+    }
+
+    .controls-btn-left {
+        left: 10px;
+    }
+
+    .controls-btn-right img {
+        transform: rotate(180deg);        
+    }
+
+    button {
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: rgb(255, 255, 255);
+        cursor: pointer;
+    }
+    .contenedor-status {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        position: absolute;
+        bottom: 20px;
+
+    }
+
+    .contenedor-status span {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: white;
+        margin: 5px;
+    }
+
+    .contenedor-status span:hover {
+        background-color: rgb(255, 132, 132);
+        cursor: pointer;
+    
+    }
+
+    .view-more {
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        position: absolute;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        border-radius: 50%;
+        left: 30px;
+        top: 40px;
+        transition: .6s;
+        cursor: pointer;
+    }
+
+    .view-more img{
+       width: 70%;
+    }
+
+    .contenedor-slider:hover .view-more {
+        transform: scale(1.2);
+        transition: .6s;
+    }
+
+    .contenedor-slider:hover .slide-item {
+        transform: scale(1.05);
+        transition: 2s;
+    }
+
+    .slide-item video {
+        width: 100%;
+    }
+
+</style>
+
+    <div class="contenedor-slider">
+        <button class="controls-btn-left">
+            <img src="img/icon_slider.svg" alt="" srcset="">
+        </button>
+
+        <button class="controls-btn-right">
+            <img src="img/icon_slider.svg" alt="" srcset="">
+        </button>
+
+        <div class="slide-item" data-id="1">
+            <img src="img/bg-slider-1.jpg" alt="">   
+        </div>
+
+        <div class="slide-item" data-id="2">
+            <img src="img/bg-slider-2.jpg" alt="">   
+        </div>
+
+    |<div class="slide-item" data-id="3">
+            <!-- <img src="img/bg-slider-3.jpg" alt="">    -->
+            <video autoplay muted loop>
+                <source src="https://cdn.shopify.com/s/files/1/0519/2695/8235/files/jamar-extraordinaria-navidad-2021-02.mp4" type="video/mp4">
+            </video>
+    </div>
+
+    <div class="contenedor-status">
+        <span></span><span></span><span></span>
+    </div>
+
+
+    <div class="view-more">
+        <img src="img/view-more.svg" alt="">
+    </div>
+
+
+
+    </div>
+    
+</body>
+
+
+
+<script>
+
+</script>
+</html>
