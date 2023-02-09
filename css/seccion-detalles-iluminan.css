@@ -1,4 +1,15 @@
-@import url('https://fonts.cdnfonts.com/css/geomanist');
+@font-face {
+    font-family:"Geomanist Regular";
+    src: url('https://joseamayadev.github.io/jamar_designs_public/Geomanist/Geomanist-Regular.otf')
+}
+@font-face {
+    font-family:"Geomanist Bold";
+    src: url('https://joseamayadev.github.io/jamar_designs_public/Geomanist/Geomanist-Bold.otf')
+}
+@font-face {
+    font-family:"Geomanist Medium";
+    src: url('https://joseamayadev.github.io/jamar_designs_public/Geomanist/Geomanist-Medium.otf')
+}
 
 .contenedor-titulos-seccion-detalles-iluminan {
     display: flex;
@@ -10,7 +21,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-family: 'Geomanist';
+    font-family: 'Geomanist Bold';
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -21,15 +32,15 @@
     color: #A7977E;
 }
 .contenedor-titulos-seccion-detalles-iluminan p{
-    font-family: 'Geomanist';
+    font-family: 'Geomanist Regular';
     font-style: normal;
-    font-weight: lighter;
+    font-weight: Regularer;
     font-size: 32px;
     width: 80%;
     color: #4E4E4E;
 }
 .contenedor-titulos-seccion-detalles-iluminan p:nth-of-type(1){
-    font-family: 'Geomanist';
+    font-family: 'Geomanist Regular';
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
@@ -77,7 +88,7 @@
 }
 .contenedor-seccion-detalles-iluminan .container-parrafo-detalles-iluminan .texto-ilumina-derecha {
     width: 571px;
-    font-family: 'Geomanist';
+    font-family: 'Geomanist Regular';
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
@@ -129,7 +140,7 @@
 
     .contenedor-seccion-detalles-iluminan .container-parrafo-detalles-iluminan .texto-ilumina-derecha {
         width: 70%;
-        font-family: 'Geomanist';
+        font-family: 'Geomanist Regular';
         font-style: normal;
         font-weight: 400;
         font-size: 22px;
