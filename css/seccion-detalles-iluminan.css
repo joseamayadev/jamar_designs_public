@@ -121,6 +121,7 @@
         align-self: flex-end;
         font-size: 20px;
         position: static;
+        margin-top: 20px;
     
     }
 
@@ -134,6 +135,14 @@
         font-size: 16px;
         position: static;
 
+    }
+
+    .contenedor-titulos-seccion-detalles-iluminan h2 {
+        font-size: 24px;
+        width: 90%;
+    }
+    .root .contenedor-titulos-seccion-detalles-iluminan p {
+        font-size: 16px;
     }
 
     

@@ -126,5 +126,9 @@
         font-size: 16px;
         line-height: 141%;
     }
+
+    .container-titles h5 {
+        margin-bottom: 30px;
+    }
 }
 

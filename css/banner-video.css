@@ -20,3 +20,34 @@
     margin: 0px;
     padding: 0px;
 }
+
+@media screen and (max-width:800px) {
+    .banner-video.video {
+        height: 242px;
+    }
+    .banner-video.video picture img {
+        height: 242px;
+        object-fit: cover;
+    }
+    .banner-video.video svg {
+        height: 72px;
+        object-fit: cover;
+    }
+    .banner-video.style-2 {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        margin-bottom: 10px;
+        padding: 0px 0%;
+        height: 235px;
+    }
+    .banner-video.style-2 picture {
+       height: 100%;
+       height: 235px;
+    }
+    .banner-video.style-2 picture img {
+       height: 100%;
+       object-fit: cover;
+       height: 235px;
+    }
+}

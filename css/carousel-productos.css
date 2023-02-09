@@ -3,12 +3,33 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
+    overflow: auto;
 }
 .carousel-productos-lumina a {
     display: flex;
     justify-content: center;
     width: 200px;
+    position: relative;
+    padding: 20px;
 }
 .carousel-productos-lumina a img{
     width: 100%;
+}
+.carousel-productos-lumina a img.img-icon-bag{
+    position: absolute;
+    width: 41px;
+    height: 41px;
+    bottom: 10px;
+    right: 10px;
+}
+
+@media screen and (max-width:800px) {
+    .carousel-productos-lumina {
+        justify-content: flex-start;
+        padding-left: 20px;
+        height: 200px;
+    }
+    .carousel-productos-lumina a img {
+        width: 144px;
+    }
 }
