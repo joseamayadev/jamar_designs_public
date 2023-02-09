@@ -1,0 +1,22 @@
+.banner-video {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom: 80px;
+}
+.banner-video.style-2 {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom: 80px;
+    padding: 0px 10%;
+}
+.banner-video img {
+    width: 100%;
+}
+
+.banner-video svg {
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+}
