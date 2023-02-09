@@ -3,7 +3,9 @@
     grid-template-columns: 1fr 1fr;
     max-width: 100%;
     height: auto;
-    margin-bottom: 40px;
+}
+.ambientes-evocan-distincion:nth-last-of-type(1) {
+    margin-bottom: 80px;
 }
 .ambientes-evocan-distincion .contenedor-derecha {
     width: 100%;
@@ -33,7 +35,11 @@
     width: 100%;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:1200px) {
+
+    .ambientes-evocan-distincion:nth-last-of-type(1) {
+        margin-bottom: 48px;
+    }
     .ambientes-evocan-distincion .contenedor-izquierda .over{
         position: absolute;
         width: 150px;

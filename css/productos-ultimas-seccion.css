@@ -13,7 +13,7 @@
 .container-titles h5 {
     width: 100%;
     text-align: center;
-    font-family: 'Geomanist Bold';
+    font-family: "Geomanist Regular";
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
@@ -22,6 +22,7 @@
     flex: none;
     order: 1;
     flex-grow: 0;
+    margin-bottom: 80px;
 }
 
 .contenedor-carousel-ultima-seccion {
@@ -44,7 +45,7 @@
 }
 .contenedor-carousel-ultima-seccion .container-ultima-seccion-cta .cta{
     width: 189px;
-    height: 61px;
+    height: 48px;
     border: 1px solid #4E4E4E;
     border-radius: 50px;
     display:flex;
@@ -53,7 +54,7 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 141%;
     text-decoration: none;
     color: #4E4E4E;
@@ -96,7 +97,7 @@
 
 
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:1200px) {
     .contenedor-carousel-ultima-seccion {
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -123,15 +124,13 @@
         padding: 0px 5%;
     }
     .container-titles h5 {
-        font-family: 'Montserrat';
+        font-family: "Geomanist Regular";
         font-style: normal;
         font-weight: 600;
         font-size: 16px;
         line-height: 141%;
+        margin-bottom: 48px;
     }
 
-    .container-titles h5 {
-        margin-bottom: 30px;
-    }
 }
 

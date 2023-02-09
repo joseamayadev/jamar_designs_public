@@ -4,11 +4,17 @@
     align-items:center;
     margin-bottom: 80px;
 }
+.banner-video a {
+    width: 100%;
+}
+.banner-video a picture {
+    width: 100%;
+}
 .banner-video.style-2 {
     display:flex;
     justify-content:center;
     align-items:center;
-    margin-bottom: 80px;
+    margin-bottom: 0px;
     padding: 0px 10%;
 }
 .banner-video img {
@@ -21,7 +27,10 @@
     padding: 0px;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:1200px) {
+    .banner-video {
+        margin-bottom: 48px;
+    }
     .banner-video.video {
         height: 242px;
     }
@@ -37,7 +46,6 @@
         display:flex;
         justify-content:center;
         align-items:center;
-        margin-bottom: 10px;
         padding: 0px 0%;
         height: 235px;
     }

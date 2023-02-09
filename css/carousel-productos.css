@@ -2,13 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
     overflow: auto;
+    margin-bottom: 80px;
 }
 .carousel-productos-lumina a {
     display: flex;
     justify-content: center;
-    width: 200px;
+    width: 250px;
     position: relative;
     padding: 20px;
 }
@@ -23,11 +23,12 @@
     right: 10px;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:1200px) {
     .carousel-productos-lumina {
         justify-content: flex-start;
-        padding-left: 20px;
+        padding-left: 0px;
         height: 200px;
+        margin-bottom: 0px;
     }
     .carousel-productos-lumina a img {
         width: 144px;
