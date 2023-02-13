@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script defer src="./contador-regresivo/contador-regresivo.js"></script>
+</head>
+<body>
+
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-contador{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #404b5a;
+    flex-direction: column;
+}
+.container-contador .parrafo-contador{
+    font-size: 20px;
+    color: white;
+    padding-bottom: 15px;
+    font-weight: 500;
+
+}
+
+.container-contador .contador-group {
+    display: flex;
+}
+
+.container-contador .contador-group .box{
+    width: 50px;
+    margin: 0 5px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    padding: 10px 0px;
+}
+.container-contador .contador-group .box .labels-contador{
+    text-align: center;
+    padding-top: 0px;
+    color: #dddddd;
+    font-size: 10px;
+    text-transform: uppercase;
+
+    
+}
+.container-contador .contador-group .box .intervals{
+    font-size: 18px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    
+}
+.alert{
+    display: none;
+}
+    </style>
+
+    <div class="container-contador">
+        <div class="contador-group">
+            <div class="box">
+                <span class="labels-contador" id="daystxt">Días</span>
+                <span class="intervals" id="days">000</span>
+            </div>
+            <div class="box">
+                <span class="labels-contador" id="hourstxt">Horas</span>
+                <span class="intervals" id="hours">00</span>
+            </div>
+            <div class="box">
+                <span class="labels-contador" id="minutestxt">Minutos</span>
+                <span class="intervals" id="minutes">00</span>
+            </div>
+            <div class="box">
+                <span class="labels-contador" id="secondstxt">Segundos</span>
+                <span class="intervals" id="seconds">00</span>
+            </div>
+        </div>
+
+        <p class="parrafo-contador">Para las ofertas de fin de año</p>
+    </div>
+
+</body>
+</html>
