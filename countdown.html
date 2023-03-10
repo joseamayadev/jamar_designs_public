@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     
-    <script defer src="./contador-regresivo/contador-regresivo.js"></script>
 </head>
 <body>
 
@@ -28,27 +27,26 @@ body{
     align-items: center;
     justify-content: center;
     background-color: #404b5a;
-    flex-direction: column;
+    padding: 6px 0px;
 }
 .container-contador .parrafo-contador{
     font-size: 18px;
     color: white;
-    padding-bottom: 15px;
     font-weight: 500;
 }
 
 .container-contador .contador-group {
     display: flex;
+    margin: 0px 15px;
 }
 
 .container-contador .contador-group .box{
-    width: 50px;
-    margin: 0 5px;
+    margin: 0 8px;
     display:flex;
     justify-content:center;
     align-items:center;
     flex-direction: column;
-    padding: 10px 0px;
+    padding: 4px;
 }
 .container-contador .contador-group .box .labels-contador{
     text-align: center;
@@ -59,12 +57,29 @@ body{
 
     
 }
+.container-contador .contador-group .box-dots{
+    font-size: 18px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    margin-top: 2px;
+    color: white;
+    border-radius: 4px;
+    padding-top: 6px;
+    
+}
 .container-contador .contador-group .box .intervals{
     font-size: 18px;
     text-align: center;
-    font-family: sans-serif;
     font-weight: 800;
     color: rgb(255, 255, 255);
+    background-color: white;
+    margin-top: 2px;
+    padding: 3px;
+    color: #cf3043;
+    border-radius: 4px;
     
 }
 .alert{
@@ -72,37 +87,71 @@ body{
 }
 
 @media screen and (max-width:800px){
+
+    .container-contador{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #404b5a;
+        padding: 6px 0px;
+        flex-direction: column;
+    }
     .container-contador .parrafo-contador{
-        font-size: 14px;
+        font-size: 16px;
         color: white;
-        padding-bottom: 15px;
+        padding-bottom: 0px;
         font-weight: 500;
+    }
+
+    .container-contador .contador-group .box .intervals{
+        font-size: 14px;
+        text-align: center;
+        font-weight: 800;
+        color: rgb(255, 255, 255);
+        background-color: white;
+        margin-top: 2px;
+        padding: 3px;
+        color: #cf3043;
+        border-radius: 4px;
+        
+    }
+
+    .container-contador .contador-group {
+        display: flex;
+        margin: 4px 0px;
     }
 }
     </style>
 
     <div class="container-contador">
+        <p class="parrafo-contador">Aprovecha:</p>
         <div class="contador-group">
             <div class="box">
                 <span class="labels-contador" id="daystxt">Días</span>
                 <span class="intervals" id="days">000</span>
             </div>
+            <div class="box-dots">:</div>
             <div class="box">
                 <span class="labels-contador" id="hourstxt">Horas</span>
                 <span class="intervals" id="hours">00</span>
             </div>
+            <div class="box-dots">:</div>
             <div class="box">
                 <span class="labels-contador" id="minutestxt">Minutos</span>
                 <span class="intervals" id="minutes">00</span>
             </div>
+            <div class="box-dots">:</div>
             <div class="box">
                 <span class="labels-contador" id="secondstxt">Segundos</span>
                 <span class="intervals" id="seconds">00</span>
             </div>
         </div>
 
-        <p class="parrafo-contador">Para las ofertas de fin de año</p>
+        <p class="parrafo-contador">Noches de compras</p>
     </div>
+    <script defer src="./contador-regresivo/contador-regresivo.js"></script>
 
 </body>
 </html>
