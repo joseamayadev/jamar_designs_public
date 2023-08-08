@@ -33,7 +33,7 @@ function handleClick(event) {
   }
 
   let contenedorFiltros = document.querySelector(".products-filters");
-  const url = 'https://hub9b8szvc.execute-api.us-east-1.amazonaws.com/prd/products/v1/classifications/PWL1-01/products?order_by=&size=10&agency=99&project_id=10&page=1';
+  const url = 'https://hub9b8szvc.execute-api.us-east-1.amazonaws.com/prd/products/v1/classifications/PWL1-02/products?order_by=&size=10&agency=99&project_id=10&page=1';
 
   fetch(url)
     .then(response => response.json())
@@ -44,10 +44,9 @@ function handleClick(event) {
         <ul class="filter-parent active">
             <li class="title">
                 <span></span>
-                Filtros
+                ${element.description}
             </li>  
         </ul>`;
-        console.log(parent)
         contenedorFiltros.innerHTML += parent;
       });
     })
