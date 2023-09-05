@@ -1,0 +1,61 @@
+.container-grid-2-column {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* insertar mediaqueri en 900px maximo */
+@media screen and (max-width: 900px) {
+    .container-grid-2-column {
+        grid-template-columns: 1fr;
+    }
+}
+
+.left-container {
+    grid-template-columns: 1fr;
+    background-color: #c5c5c5;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.left-container picture img {
+    animation-name: aumentar-reducir;
+    animation-duration: 2s;
+    animation-delay: 5s;  /* Iniciar la animación después de 5 segundos */
+    animation-iteration-count: infinite; /* Si desea que la animación se repita indefinidamente */
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .left-container {
+        grid-template-columns: 1fr;
+        height: 100px;
+        background-color: #000;
+    }
+}
+
+@keyframes opacidad {
+    0% {opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}   
+}
+@keyframes opacidad-out {
+    0% {opacity: 1;}
+    50% {opacity: 0.5;}
+    100% {opacity: 0;}   
+}
+
+@keyframes aumentar-reducir {
+    0% {transform: scale(0.9);}
+    50% {transform: scale(1);}
+    100% {transform: scale(0.9);}     
+}
+
+@keyframes aumentar-reducir-2 {
+    0% {transform: scale(0.4);}
+    50% {transform: scale(1);}
+    100% {transform: scale(0.4);}     
+}
+  
