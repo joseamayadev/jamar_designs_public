@@ -8,29 +8,31 @@
 <!-- bootstrap version 5 mas reciente desde el cdn de getbootstrap -->
 <link rel="stylesheet" href="https://www.jamar.com/cdn/shop/t/509/assets/bootstrap4-5-2.min.css?v=32790286390565968741688561012"></head>
 <body>
-    <section class="container-grid-2-column">
-            <div class="left-container">
-                <picture class="h-100">
-                    <source media="(min-width: 900px)" srcset="">
-                    <img class="img-fluid h-100" src="sello.svg" alt="">
-                </picture>
-            </div>
+    <section class="container-fluid ">
+      <div class="row gap-0">
+        <div class="left-container col-md-6 p-0 d-flex justify-content-center align-items-center">
+            <picture class="h-100">
+                <source media="(min-width: 900px)" srcset="">
+                <img class="img-fluid h-100" src="sello.svg" alt="">
+            </picture>
+        </div>
 
-            <div class="slideshow-container">
-              <div class="slide carousel-fade">
-                <div class="carousel-inner">
-                  <a href="#" class="carousel-item active w-100">
-                    <img src="01.jpg" class="d-block w-100" alt="...">
-                  </a>
-                  <a href="#" class="carousel-item">
-                    <img src="02.jpg" class="d-block w-100" alt="...">
-                  </a>
-                  <a href="#" class="carousel-item">
-                    <img src="03.jpg" class="d-block w-100" alt="...">
-                  </a>
-                </div>
-              </div>
+        <div class="slideshow-container col-md-6 p-0">
+          <div class="slide carousel-fade">
+            <div class="carousel-inner">
+              <a href="#" class="carousel-item active w-100">
+                <img src="01.jpg" class="d-block w-100" alt="...">
+              </a>
+              <a href="#" class="carousel-item">
+                <img src="02.jpg" class="d-block w-100" alt="...">
+              </a>
+              <a href="#" class="carousel-item">
+                <img src="03.jpg" class="d-block w-100" alt="...">
+              </a>
             </div>
+          </div>
+        </div>
+      </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
