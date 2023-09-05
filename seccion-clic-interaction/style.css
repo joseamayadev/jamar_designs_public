@@ -25,8 +25,11 @@
     animation-iteration-count: infinite; /* Si desea que la animación se repita indefinidamente */
 }
 
+.carousel-item:hover {
+    animation: none;
+}
 .carousel-item {
-    animation: opacidad 1s infinite;
+    animation: opacidad 2s infinite;
 }
 
 
@@ -47,7 +50,7 @@
 }
 
 @keyframes opacidad {
-    0% {opacity: 0.5;}
+    0% {opacity: 0.7;}
     100% {opacity: 1;}   
 }
 @keyframes opacidad-out {
@@ -57,9 +60,9 @@
 }
 
 @keyframes aumentar-reducir {
-    0% {transform: scale(0.9);}
+    0% {transform: scale(0.97);}
     50% {transform: scale(1);}
-    100% {transform: scale(0.9);}     
+    100% {transform: scale(0.97);}     
 }
 
 @keyframes aumentar-reducir-2 {

@@ -1,5 +1,5 @@
 $('.slideshow-container').carousel({
-    interval: 1000,
+    interval: 2000,
     pause: "hover",
     wrap: true,
     keyboard: true,
