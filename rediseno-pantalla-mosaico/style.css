@@ -1,0 +1,10 @@
+a {
+    font-family: Lato;
+    text-decoration: none;
+    color: #5b5b5b;
+}
+
+.container-filters-all {
+    height: 600px;
+    background-color: #dfdfdf;
+}

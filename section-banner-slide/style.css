@@ -1,0 +1,182 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container-banner-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container-banner-slide .banner-with-button {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 0px;
+}
+@media screen and (max-width: 900px) {
+  .container-banner-slide .banner-with-button {
+    margin-bottom: 100px;
+    height: 260px;
+    justify-content: flex-end;
+  }
+}
+.container-banner-slide .banner-with-button picture {
+  position: absolute;
+  background: #BABABA;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.container-banner-slide .banner-with-button .card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 16px;
+}
+@media screen and (max-width: 900px) {
+  .container-banner-slide .banner-with-button .card-container {
+    background-color: #F9F9F9;
+    transform: translateY(50%);
+    max-width: 343px;
+  }
+}
+.container-banner-slide .banner-with-button .card-container .banner-title {
+  color: #404B5A;
+  text-align: center;
+  font-family: Lato;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px; /* 117.647% */
+  letter-spacing: 0.34px;
+}
+@media screen and (max-width: 900px) {
+  .container-banner-slide .banner-with-button .card-container .banner-title {
+    color: #404B5A;
+    text-align: center;
+    font-family: Lato;
+    font-size: 22px;
+    letter-spacing: 0.22px;
+    margin: 0px;
+    line-height: 26px;
+  }
+}
+.container-banner-slide .banner-with-button .card-container p {
+  color: #404B5A;
+  text-align: center;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+  letter-spacing: 0.16px;
+  margin-top: 16px;
+  margin: 0px;
+}
+@media screen and (max-width: 900px) {
+  .container-banner-slide .banner-with-button .card-container p {
+    font-size: 14px;
+    color: #404B5A;
+  }
+}
+.container-banner-slide .banner-with-button .card-container button {
+  margin-top: 16px;
+  display: flex;
+  width: 200px;
+  height: 48px;
+  padding: 0px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 35px;
+  background: #404B5A;
+  border: 0px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
+@media screen and (max-width: 900px) {
+  .container-banner-slide .banner-with-button .card-container button {
+    display: flex;
+    width: 200px;
+    height: 48px;
+    padding: 0px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 35px;
+    background: #404B5A;
+  }
+}
+
+.banner-carousel {
+  margin-top: 32px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  max-width: 1200px;
+}
+@media screen and (max-width: 900px) {
+  .banner-carousel {
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 0px;
+    height: 320px;
+    width: 95%;
+  }
+}
+.banner-carousel .tarjeta {
+  height: 283px;
+  width: 100%;
+}
+.banner-carousel .tarjeta img {
+  background: #BABABA;
+  width: 100%;
+  height: 284px;
+}
+.banner-carousel .tarjeta p {
+  color: #404B5A;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 900px) {
+  .banner-carousel .tarjeta {
+    min-width: 282.5px;
+    min-height: 282.5px;
+  }
+}
+
+/* Estilo personalizado para la barra de desplazamiento */
+.banner-carousel::-webkit-scrollbar {
+  width: 10px;
+  margin: 20px;
+}
+
+.banner-carousel::-webkit-scrollbar-thumb {
+  background-color: #404B5A;
+  border-radius: 5px;
+}
+
+.banner-carousel::-webkit-scrollbar-thumb:hover {
+  background-color: #404B5A;
+}
+
+.banner-carousel::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background: var(--secundario-light, #CED4DA);
+}/*# sourceMappingURL=style.css.map */

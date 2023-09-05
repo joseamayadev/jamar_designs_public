@@ -71,15 +71,21 @@
 
 
         <section class="banner-video video">
-            <svg width="114" height="113" viewBox="0 0 114 113" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg id="playVideoLumina" width="114" height="113" viewBox="0 0 114 113" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path opacity="0.3" d="M56.6667 112.5C87.9628 112.5 113.333 87.316 113.333 56.25C113.333 25.184 87.9628 0 56.6667 0C25.3705 0 0 25.184 0 56.25C0 87.316 25.3705 112.5 56.6667 112.5Z" fill="black"/>
                 <path d="M45.3335 33.75L79.3335 56.25L45.3335 78.75V33.75Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
                 
-            <picture>
-                <img src="https://res.cloudinary.com/www-ismyt-com/image/upload/v1675967994/IMAGENES/JAMAR/IMG_4_-_DESKTOP_mrcmgg.png" alt="">
-            </picture>
+            <video id="VideoLumina" src="https://cdn.shopify.com/videos/c/o/v/1bb1ada6d2a94e45907ff1f2741c195f.mp4"></video>
         </section>
+
+        <script>
+            let videoLumina = document.querySelector("#VideoLumina");
+            window.addEventListener("load", () => {
+                videoLumina.autoplay = true;
+                videoLumina.load();
+            })
+        </script>
 
         <!-- Seccion AMBIENTES QUE ILUMINAN CON DISTINCIÓN. -->
         <div class="contenedor-titulos-seccion-detalles-iluminan">
@@ -176,5 +182,6 @@
         </div> 
 
     </div>
+    
 </body>
 </html>
