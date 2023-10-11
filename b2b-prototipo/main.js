@@ -50,6 +50,60 @@ let preciosInsumos =
         "precio": "11211",
         "descripcion": "ESPUMA TSE AMARILLA D15 100X200X2",
         "imageEsponja":"https://res.cloudinary.com/www-ismyt-com/image/upload/v1696971827/IMAGENES/JAMAR/B2B/qxcwzbrxgv9wc9eba1ak.png"
+      },
+      {
+        "codigo": "I8001619",
+        "precio": "26699",
+        "descripcion": "EUROLINO MARFIL",
+        "imageEsponja":"https://res.cloudinary.com/www-ismyt-com/image/upload/f_auto,q_auto/v1/IMAGENES/JAMAR/B2B/lhhr8pqp5ts66csszzmu"
+      },
+      {
+        "codigo": "9002258",
+        "precio": "24192",
+        "descripcion": "TELA BOUQUET ROSA",
+        "imageEsponja":"https://res.cloudinary.com/www-ismyt-com/image/upload/v1696971827/IMAGENES/JAMAR/B2B/qxcwzbrxgv9wc9eba1ak.png"
+      },
+      {
+        "codigo": "I8001500",
+        "precio": "15012",
+        "descripcion": "TELA KAZAN AZUL",
+        "imageEsponja":"https://res.cloudinary.com/www-ismyt-com/image/upload/v1696971827/IMAGENES/JAMAR/B2B/qxcwzbrxgv9wc9eba1ak.png"
+      },
+      {
+        "codigo": "9000336",
+        "precio": "15012",
+        "descripcion": "TELA KAZAN PLOMO",
+        "imageEsponja":"https://res.cloudinary.com/www-ismyt-com/image/upload/v1697039981/IMAGENES/JAMAR/B2B/nsriwpgelsrrz26ghfiu.png"
+      },
+      {
+        "codigo": "9002257",
+        "precio": "23716",
+        "descripcion": "TELA LUXURY GRIS OSCURO",
+        "imageEsponja":"https://res.cloudinary.com/www-ismyt-com/image/upload/v1697039854/IMAGENES/JAMAR/B2B/iwfzoo9d7bcgm02026p7.png"
+      },
+      {
+        "codigo": "9002926",
+        "precio": "2000",
+        "descripcion": "TELA TAFETA NEGRA",
+        "imageEsponja":"https://res.cloudinary.com/www-ismyt-com/image/upload/v1697039326/IMAGENES/JAMAR/B2B/ak4knpzfeh8d8zqhtbd0.png"
+      },
+      {
+        "codigo": "9002604",
+        "precio": "13759",
+        "descripcion": "TELA VELVET RICH PETROLEO",
+        "imageEsponja":"https://res.cloudinary.com/www-ismyt-com/image/upload/v1697039729/IMAGENES/JAMAR/B2B/wovoyzlv3gmqppxizx7v.png"
+      },
+      {
+        "codigo": "I8001700",
+        "precio": "2658",
+        "descripcion": "GUATA INT 80GR X 1.60 M",
+        "imageEsponja":"https://res.cloudinary.com/www-ismyt-com/image/upload/v1697039326/IMAGENES/JAMAR/B2B/xecil7r7l3sdkx6bcjjd.png"
+      },
+      {
+        "codigo": "9001429",
+        "precio": "7983",
+        "descripcion": "FIELTRO BLACKTEX 220 GR 2X2 MT",
+        "imageEsponja":"https://res.cloudinary.com/www-ismyt-com/image/upload/v1697039326/IMAGENES/JAMAR/B2B/zisngelrnoziwyhobyuc.png"
       }
 ]
 
@@ -416,6 +470,415 @@ let preciosInsumos =
     }
 ]
 
+let telas = [
+    {
+        "sku": "7026484",
+        "material": "I8001619",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7023395",
+        "material": "I8001619",
+        "unidad": "15.00"
+    },
+    {
+        "sku": "7024699",
+        "material": "I8001619",
+        "unidad": "15.00"
+    },
+    {
+        "sku": "7024132",
+        "material": "I8001619",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7024076",
+        "material": "I8001619",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7026052",
+        "material": "I8001619",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7020529",
+        "material": "I8001619",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7023980",
+        "material": "I8001619",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7024116",
+        "material": "I8001619",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7026484",
+        "material": "9002258",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7023395",
+        "material": "9002258",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7024699",
+        "material": "9002258",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7024132",
+        "material": "9002258",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7024076",
+        "material": "9002258",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7026052",
+        "material": "9002258",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7020529",
+        "material": "9002258",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7023980",
+        "material": "9002258",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7024116",
+        "material": "9002258",
+        "unidad": "6.30"
+    },
+    {
+        "sku": "7026484",
+        "material": "I8001500",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7023395",
+        "material": "I8001500",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7024699",
+        "material": "I8001500",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7024132",
+        "material": "I8001500",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7024076",
+        "material": "I8001500",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7026052",
+        "material": "I8001500",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7020529",
+        "material": "I8001500",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7023980",
+        "material": "I8001500",
+        "unidad": "15.00"
+    },
+    {
+        "sku": "7024116",
+        "material": "I8001500",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7026484",
+        "material": "9000336",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7023395",
+        "material": "9000336",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7024699",
+        "material": "9000336",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7024132",
+        "material": "9000336",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7024076",
+        "material": "9000336",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7026052",
+        "material": "9000336",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7020529",
+        "material": "9000336",
+        "unidad": "6.20"
+    },
+    {
+        "sku": "7023980",
+        "material": "9000336",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7024116",
+        "material": "9000336",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7026484",
+        "material": "9002257",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7023395",
+        "material": "9002257",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7024699",
+        "material": "9002257",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7024132",
+        "material": "9002257",
+        "unidad": "18.00"
+    },
+    {
+        "sku": "7024076",
+        "material": "9002257",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7026052",
+        "material": "9002257",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7020529",
+        "material": "9002257",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7023980",
+        "material": "9002257",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7024116",
+        "material": "9002257",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7026484",
+        "material": "9002926",
+        "unidad": "1.00"
+    },
+    {
+        "sku": "7023395",
+        "material": "9002926",
+        "unidad": "2.40"
+    },
+    {
+        "sku": "7024699",
+        "material": "9002926",
+        "unidad": "2.40"
+    },
+    {
+        "sku": "7024132",
+        "material": "9002926",
+        "unidad": "4.75"
+    },
+    {
+        "sku": "7024076",
+        "material": "9002926",
+        "unidad": "2.00"
+    },
+    {
+        "sku": "7026052",
+        "material": "9002926",
+        "unidad": "1.90"
+    },
+    {
+        "sku": "7020529",
+        "material": "9002926",
+        "unidad": "2.70"
+    },
+    {
+        "sku": "7023980",
+        "material": "9002926",
+        "unidad": "2.40"
+    },
+    {
+        "sku": "7024116",
+        "material": "9002926",
+        "unidad": "2.00"
+    },
+    {
+        "sku": "7026484",
+        "material": "9002604",
+        "unidad": "3.20"
+    },
+    {
+        "sku": "7023395",
+        "material": "9002604",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7024699",
+        "material": "9002604",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7024132",
+        "material": "9002604",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7024076",
+        "material": "9002604",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7026052",
+        "material": "9002604",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7020529",
+        "material": "9002604",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7023980",
+        "material": "9002604",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7024116",
+        "material": "9002604",
+        "unidad": "0.00"
+    },
+    {
+        "sku": "7026484",
+        "material": "I8001700",
+        "unidad": "2.00"
+    },
+    {
+        "sku": "7023395",
+        "material": "I8001700",
+        "unidad": "4.00"
+    },
+    {
+        "sku": "7024699",
+        "material": "I8001700",
+        "unidad": "4.00"
+    },
+    {
+        "sku": "7024132",
+        "material": "I8001700",
+        "unidad": "4.00"
+    },
+    {
+        "sku": "7024076",
+        "material": "I8001700",
+        "unidad": "4.00"
+    },
+    {
+        "sku": "7026052",
+        "material": "I8001700",
+        "unidad": "5.00"
+    },
+    {
+        "sku": "7020529",
+        "material": "I8001700",
+        "unidad": "2.20"
+    },
+    {
+        "sku": "7023980",
+        "material": "I8001700",
+        "unidad": "4.00"
+    },
+    {
+        "sku": "7024116",
+        "material": "I8001700",
+        "unidad": "1.00"
+    },
+    {
+        "sku": "7026484",
+        "material": "9001429",
+        "unidad": "0.57"
+    },
+    {
+        "sku": "7023395",
+        "material": "9001429",
+        "unidad": "2.00"
+    },
+    {
+        "sku": "7024699",
+        "material": "9001429",
+        "unidad": "2.00"
+    },
+    {
+        "sku": "7024132",
+        "material": "9001429",
+        "unidad": "0.80"
+    },
+    {
+        "sku": "7024076",
+        "material": "9001429",
+        "unidad": "1.03"
+    },
+    {
+        "sku": "7026052",
+        "material": "9001429",
+        "unidad": "0.60"
+    },
+    {
+        "sku": "7020529",
+        "material": "9001429",
+        "unidad": "0.45"
+    },
+    {
+        "sku": "7023980",
+        "material": "9001429",
+        "unidad": "2.00"
+    },
+    {
+        "sku": "7024116",
+        "material": "9001429",
+        "unidad": "0.17"
+    }
+]
+
+
 
 window.addEventListener("click", (e) => {
     e.preventDefault()
@@ -469,9 +932,10 @@ function renderMateriales(objetoMateriales, productSku) {
     console.log(productSku)
     let renderMaterialesList = document.querySelector(".render-materiales")
     const elementosFiltrados = espumas.filter(espumas => espumas.sku == productSku);
-    
+    const elementosFiltradosTelas = telas.filter(espumas => espumas.sku == productSku);    
 
     elementosFiltrados.forEach(element => {
+        console.log(element)
         //verificar el nombre de la espuma
         let espumasFiltradas = preciosInsumos.filter(preciosInsumos => preciosInsumos.codigo == element.material);
         if (element.unidad > 0) {
@@ -480,6 +944,27 @@ function renderMateriales(objetoMateriales, productSku) {
             <ul class="list-group list-group-flush d-flex justify-content-center text-center">
                 <img class="rounded-pill" src="${espumasFiltradas[0].imageEsponja}" />
                 <h5 class="text-start material-text-size mt-2"> ${espumasFiltradas[0].descripcion} </h5>
+                <h5 class="text-start material-text-size"> ${element.unidad} </h5>
+              <li class="list-group-item">
+              <div class="d-flex justify-content-center align-items-center">
+                <button class="btn"><i class="bi bi-dash-circle-fill"></i></button>
+                <span>0</span>
+                <button class="btn"><i class="bi bi-plus-circle-fill"></i></button>
+              </div>
+              </li>
+            </ul>
+          </div>
+        `
+    }});
+    elementosFiltradosTelas.forEach(element => {
+        //verificar el nombre de la espuma
+        let telasFiltradas = preciosInsumos.filter(preciosInsumos => preciosInsumos.codigo == element.material);
+        if (element.unidad > 0) {
+            renderMaterialesList.innerHTML += `
+            <div class="card" style="width: 7rem;">
+            <ul class="list-group list-group-flush d-flex justify-content-center text-center">
+                <img class="rounded-pill" src="${telasFiltradas[0].imageEsponja}" />
+                <h5 class="text-start material-text-size mt-2"> ${telasFiltradas[0].descripcion} </h5>
                 <h5 class="text-start material-text-size"> ${element.unidad} </h5>
               <li class="list-group-item">
               <div class="d-flex justify-content-center align-items-center">
