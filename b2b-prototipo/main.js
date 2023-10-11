@@ -473,16 +473,12 @@ function renderMateriales(objetoMateriales, productSku) {
 
     elementosFiltrados.forEach(element => {
         //verificar el nombre de la espuma
-        console.log(element)
         let espumasFiltradas = preciosInsumos.filter(preciosInsumos => preciosInsumos.codigo == element.material);
-        console.log(espumasFiltradas)
-
-
         if (element.unidad > 0) {
             renderMaterialesList.innerHTML += `
             <div class="card" style="width: 7rem;">
             <ul class="list-group list-group-flush d-flex justify-content-center text-center">
-                <img src="${espumasFiltradas[0].imageEsponja}" />
+                <img class="rounded-pill" src="${espumasFiltradas[0].imageEsponja}" />
                 <h5 class="text-start material-text-size mt-2"> ${espumasFiltradas[0].descripcion} </h5>
                 <h5 class="text-start material-text-size"> ${element.unidad} </h5>
               <li class="list-group-item">
