@@ -14,7 +14,7 @@
     <!-- Header principal -->
     <nav class="navbar navbar-expand-lg p-md-4 ps-4 pe-4">
         <div class="container">
-          <a class="navbar-brand" href="/">
+          <a class="navbar-brand" href="/" href="javascript:void(0);" onclick="window.location='/'">
             <img src="https://cdn.shopify.com/s/files/1/0516/5478/7271/files/muebles-jamar-marca-registrada.svg" alt="Jamar" width="90" height="24">
         </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,6 +34,15 @@
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Comedores
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Sillas</a></li>
+                  <li><a class="dropdown-item" href="#">Mesas</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                  Dormitorios
                 </a>
                 <ul class="dropdown-menu">
@@ -42,21 +51,19 @@
                   <li><a class="dropdown-item" href="#">Reclinables</a></li>
                 </ul>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                 Comedores
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Sillas</a></li>
-                  <li><a class="dropdown-item" href="#">Mesas</a></li>
-                </ul>
-              </li>
+
             </ul>
           </div>
         </div>
         <form class="d-flex w-100 w-md-50 mt-md-0 mt-2"  role="search">
-          <input class="form-control me-2 rounded-pill" type="search" placeholder="Buscador de productos" aria-label="Search">
-          <button class="btn btn-dark rounded-pill" type="submit">Buscar</button>
+          <div class="form-control me-2 rounded-pill d-flex">
+            <input class="border-0 form-control outline-0 w-100 h-100" style="outline: 0px;" type="search" placeholder="Buscador de productos" aria-label="Search">
+            <button class="bg-transparent border-0"><i class="bi bi-search"></i></button>
+          </div>
+          <button class="btn btn-dark rounded-pill d-flex" type="submit">
+            <i class="bi bi-person-fill"></i>
+            Ingresar
+          </button>
         </form>
       </nav>
     <!-- Fin del header principal -->
@@ -70,7 +77,7 @@
 
     <div class="render-components container">
         <div class="mt-4">
-            <div class="row justify-content-start gap-5">
+            <div class="row justify-content-md-start justify-content-center gap-5">
                 <!-- Primer producto -->
                 <a class="card text-decoration-none card-product-page-list" 
                 data-url-product="7026484" 
@@ -85,7 +92,7 @@
                     </div>
                 </a>
                 <!-- Segundo producto -->
-                <a class="card text-decoration-none card-product-page-list" href="#" 
+                <a class="card text-decoration-none card-product-page-list" 
                 data-url-product="7023395" 
                 data-product-name="Sala en L Holden Eurolino Marfil"
                 data-product-image="https://d3lome5o0h180x.cloudfront.net/eyJidWNrZXQiOiJiYWNrYm9uZS1hc3NldHMtcHJkIiwia2V5IjoiQVNUXzMyNTg4NS9BU1RfMzI1ODg1LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTUwMCwiaGVpZ2h0IjoxNTAwLCJmaXQiOiJjb250YWluIn19fQ=="
@@ -98,7 +105,7 @@
                     </div>
                 </a>
                 <!-- Tercer producto -->
-                <a class="card text-decoration-none card-product-page-list" href="#" 
+                <a class="card text-decoration-none card-product-page-list" 
                 data-url-product="7024699" 
                 data-product-name="Sala Cama Holden Eurolino Marfil"
                 data-product-image="https://res.cloudinary.com/www-ismyt-com/image/upload/v1697040276/wk76m62lu68cxqmi5hin.jpg"
@@ -111,7 +118,7 @@
                     </div>
                 </a>
                 <!-- Cuarto producto -->
-                <a class="card text-decoration-none card-product-page-list" href="#" 
+                <a class="card text-decoration-none card-product-page-list" 
                 data-url-product="7024132" 
                 data-product-name="Sala en L Jeff Velvet Plomo"
                 data-product-image="https://d3lome5o0h180x.cloudfront.net/eyJidWNrZXQiOiJiYWNrYm9uZS1hc3NldHMtcHJkIiwia2V5IjoiQVNUXzIxNTM5My9BU1RfMjE1MzkzLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTUwMCwiaGVpZ2h0IjoxNTAwLCJmaXQiOiJjb250YWluIn19fQ=="
@@ -124,7 +131,7 @@
                     </div>
                 </a>
                 <!-- Quinto producto -->
-                <a class="card text-decoration-none card-product-page-list" href="#"
+                <a class="card text-decoration-none card-product-page-list"
                 data-url-product="7024076" 
                 data-product-name="Sala Cama Kepler Eurolino Plomo"
                 data-product-image="https://res.cloudinary.com/www-ismyt-com/image/upload/v1697040277/d2zgrqi1r5i9hu4zyf0j.jpg" 
@@ -137,20 +144,20 @@
                     </div>
                 </a>
                 <!-- Sexto producto -->
-                <a class="card text-decoration-none card-product-page-list" href="#" 
+                <a class="card text-decoration-none card-product-page-list" 
                 data-url-product="7026052" 
                 data-product-name="Sofá 3 Puestos Alina Velvet Oliver Verde, Champaña"
-                data-product-image="https://d3lome5o0h180x.cloudfront.net/eyJidWNrZXQiOiJiYWNrYm9uZS1hc3NldHMtcHJkIiwia2V5IjoiMzAzODk3LzMwMzg5Ny5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjE1MDAsImhlaWdodCI6MTUwMCwiZml0IjoiY29udGFpbiJ9fX0="
+                data-product-image="https://res.cloudinary.com/www-ismyt-com/image/upload/v1697049829/IMAGENES/JAMAR/B2B/ldkoblh2rfad2gusgksm.jpg"
                 style="width: 10rem;">
-                    <img src="https://d3lome5o0h180x.cloudfront.net/eyJidWNrZXQiOiJiYWNrYm9uZS1hc3NldHMtcHJkIiwia2V5IjoiQVNUXzMzODc5Ni9BU1RfMzM4Nzk2LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTUwMCwiaGVpZ2h0IjoxNTAwLCJmaXQiOiJjb250YWluIn19fQ==" class="card-img-top">
+                    <img src="https://res.cloudinary.com/www-ismyt-com/image/upload/v1697049829/IMAGENES/JAMAR/B2B/ldkoblh2rfad2gusgksm.jpg" class="card-img-top">
                     <div class="card-body p-0">
-                      <h5 class="card-title fs-6">Sala en L Andros Microfibra London Petroleo, Wengue</h5>
+                      <h5 class="card-title fs-6">Sala Modular Nala Nhilo Beige</h5>
                     </div>
                     <div class="card-body p-0">
                     </div>
                 </a>
                 <!-- Septima producto -->
-                <a class="card text-decoration-none card-product-page-list" href="#" 
+                <a class="card text-decoration-none card-product-page-list" 
                 data-url-product="7020529" 
                 data-product-name="Sofá Cama Dory Lino Kazan Plomo, Natural"
                 data-product-image="https://d3lome5o0h180x.cloudfront.net/eyJidWNrZXQiOiJiYWNrYm9uZS1hc3NldHMtcHJkIiwia2V5IjoiNzQxOTMxLzc0MTkzMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjE1MDAsImhlaWdodCI6MTUwMCwiZml0IjoiY29udGFpbiJ9fX0="
@@ -163,20 +170,20 @@
                     </div>
                 </a>
                 <!-- Octavo producto -->
-                <a class="card text-decoration-none card-product-page-list" href="#" 
+                <a class="card text-decoration-none card-product-page-list" 
                 data-url-product="7023980" 
                 data-product-name="Sofá 3 Puestos Alina Velvet Oliver Verde, Champaña"
-                data-product-image="https://d3lome5o0h180x.cloudfront.net/eyJidWNrZXQiOiJiYWNrYm9uZS1hc3NldHMtcHJkIiwia2V5IjoiMzAzODk3LzMwMzg5Ny5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjE1MDAsImhlaWdodCI6MTUwMCwiZml0IjoiY29udGFpbiJ9fX0="
+                data-product-image="https://res.cloudinary.com/www-ismyt-com/image/upload/v1697049830/IMAGENES/JAMAR/B2B/wo8b156qxr35fqsbyr2g.jpg"
                 style="width: 10rem;">
-                    <img src="https://d3lome5o0h180x.cloudfront.net/eyJidWNrZXQiOiJiYWNrYm9uZS1hc3NldHMtcHJkIiwia2V5IjoiQVNUXzMzODc5Ni9BU1RfMzM4Nzk2LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTUwMCwiaGVpZ2h0IjoxNTAwLCJmaXQiOiJjb250YWluIn19fQ==" class="card-img-top">
+                    <img src="https://res.cloudinary.com/www-ismyt-com/image/upload/v1697049830/IMAGENES/JAMAR/B2B/wo8b156qxr35fqsbyr2g.jpg" class="card-img-top">
                     <div class="card-body p-0">
-                      <h5 class="card-title fs-6">Sala en L Andros Microfibra London Petroleo, Wengue</h5>
+                      <h5 class="card-title fs-6">Sala Cama Holden Lino Kazan Azul</h5>
                     </div>
                     <div class="card-body p-0">
                     </div>
                 </a>
                 <!-- Noveno producto -->
-                <a class="card text-decoration-none card-product-page-list" href="#" 
+                <a class="card text-decoration-none card-product-page-list" 
                 data-url-product="7024116" 
                 data-product-name="Silla Reclinable Bahia Chenille Gris"
                 data-product-image="https://res.cloudinary.com/www-ismyt-com/image/upload/v1697040277/dgjhxgi7nvh6ctl2hqi2.jpg"
@@ -188,7 +195,6 @@
                     <div class="card-body p-0">
                     </div>
                 </a>
-
             </div>
         </div>
     </div>

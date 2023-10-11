@@ -1,3 +1,6 @@
+.card-product-page-list {
+     cursor: pointer;
+}
 .card-product-page-list * {
      cursor: no-drop;
      pointer-events: none;

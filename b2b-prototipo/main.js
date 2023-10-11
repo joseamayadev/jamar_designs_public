@@ -909,17 +909,28 @@ function renderProductPage(product){
     let objetoMateriales = preciosInsumos;
     renderProductsContainer.innerHTML = `
     <div class="row">
-    <div class="col-5">
+    <div class="col-md-5">
         <img class="img-fluid w-100" src="${productImage}" alt="">
     </div>
-    <div class="col-7">
+    <div class="col-md-7">
+        
         <div class="container-materiales border h-100 rounded p-4">
             <div class="row">
                 <h1 class="fs-4 text-dark">${productName}</h1>
             </div>
-            <div class="row mt-3 render-materiales gap-2">
+            <div class="row d-flex mt-2 align-items-center">
+            <button class="btn col-md-1">
+                <i class="bi bi-dash-circle-fill fs-2"></i>
+            </button>
+            <div class="col-md-2 text-center">Cantidads</div>
+            <button class="btn col-md-1">
+                <i class="bi bi-plus-circle-fill fs-2"></i>
+            </button>
+        </div>
+            <div class="row mt-3 render-materiales gap-2 justify-content-center justify-content-md-start">
             </div>
         </div>
+        
     </div>
 </div>`;
 //renderizando los elementos internos
@@ -935,7 +946,6 @@ function renderMateriales(objetoMateriales, productSku) {
     const elementosFiltradosTelas = telas.filter(espumas => espumas.sku == productSku);    
 
     elementosFiltrados.forEach(element => {
-        console.log(element)
         //verificar el nombre de la espuma
         let espumasFiltradas = preciosInsumos.filter(preciosInsumos => preciosInsumos.codigo == element.material);
         if (element.unidad > 0) {
@@ -944,14 +954,6 @@ function renderMateriales(objetoMateriales, productSku) {
             <ul class="list-group list-group-flush d-flex justify-content-center text-center">
                 <img class="rounded-pill" src="${espumasFiltradas[0].imageEsponja}" />
                 <h5 class="text-start material-text-size mt-2"> ${espumasFiltradas[0].descripcion} </h5>
-                <h5 class="text-start material-text-size"> ${element.unidad} </h5>
-              <li class="list-group-item">
-              <div class="d-flex justify-content-center align-items-center">
-                <button class="btn"><i class="bi bi-dash-circle-fill"></i></button>
-                <span>0</span>
-                <button class="btn"><i class="bi bi-plus-circle-fill"></i></button>
-              </div>
-              </li>
             </ul>
           </div>
         `
@@ -965,21 +967,17 @@ function renderMateriales(objetoMateriales, productSku) {
             <ul class="list-group list-group-flush d-flex justify-content-center text-center">
                 <img class="rounded-pill" src="${telasFiltradas[0].imageEsponja}" />
                 <h5 class="text-start material-text-size mt-2"> ${telasFiltradas[0].descripcion} </h5>
-                <h5 class="text-start material-text-size"> ${element.unidad} </h5>
-              <li class="list-group-item">
-              <div class="d-flex justify-content-center align-items-center">
-                <button class="btn"><i class="bi bi-dash-circle-fill"></i></button>
-                <span>0</span>
-                <button class="btn"><i class="bi bi-plus-circle-fill"></i></button>
-              </div>
-              </li>
             </ul>
           </div>
         `
     }});
 }
 
-
+// Funcionalidad para regresar
+window.addEventListener('popstate', function(event) {
+    // Aquí puedes ejecutar tu código cuando el usuario hace clic en "Atrás"
+    window.location.href ="/";
+  });
 
 
 
