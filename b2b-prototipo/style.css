@@ -1,0 +1,9 @@
+.card-product-page-list * {
+     cursor: no-drop;
+     pointer-events: none;
+}
+
+.material-text-size {
+    width: 10ch ;
+    font-size: 11px;
+}
