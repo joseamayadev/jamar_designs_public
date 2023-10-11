@@ -424,26 +424,35 @@ window.addEventListener("click", (e) => {
     if (e.target.classList.contains("card-product-page-list")) {
         let url = new URL(window.location.href);
         url.searchParams.set("product", e.target.dataset.urlProduct);
+
+        let productSku = e.target.dataset.urlProduct;
     
         history.pushState(null, null, url.toString())
+
+        let productObject = {
+            productName: e.target.dataset.productName,
+            productSku: e.target.dataset.urlProduct,
+            productImage: e.target.dataset.productImage
+        }
         
-        renderProductPage(productName)
+        renderProductPage(productObject)
     }
 })
 
 
 function renderProductPage(product){
+    let { productName, productSku, productImage } = product;
     let renderProductsContainer = document.querySelector(".render-components");
     let objetoMateriales = preciosInsumos;
     renderProductsContainer.innerHTML = `
     <div class="row">
     <div class="col-5">
-        <img class="img-fluid w-100" src="https://d3lome5o0h180x.cloudfront.net/eyJidWNrZXQiOiJiYWNrYm9uZS1hc3NldHMtcHJkIiwia2V5IjoiQVNUXzI4MDI5OC9BU1RfMjgwMjk4LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTUwMCwiaGVpZ2h0IjoxNTAwLCJmaXQiOiJjb250YWluIn19fQ==" alt="">
+        <img class="img-fluid w-100" src="${productImage}" alt="">
     </div>
     <div class="col-7">
         <div class="container-materiales border h-100 rounded p-4">
             <div class="row">
-                <h1 class="fs-4 text-dark">${product}</h1>
+                <h1 class="fs-4 text-dark">${productName}</h1>
             </div>
             <div class="row mt-3 render-materiales gap-2">
             </div>
@@ -451,14 +460,15 @@ function renderProductPage(product){
     </div>
 </div>`;
 //renderizando los elementos internos
-renderMateriales(objetoMateriales)
+renderMateriales(objetoMateriales, productSku)
 
 }
 
 
-function renderMateriales(objetoMateriales) {
+function renderMateriales(objetoMateriales, productSku) {
+    console.log(productSku)
     let renderMaterialesList = document.querySelector(".render-materiales")
-    const elementosFiltrados = espumas.filter(espumas => espumas.sku == 7026484);
+    const elementosFiltrados = espumas.filter(espumas => espumas.sku == productSku);
     
 
     elementosFiltrados.forEach(element => {
