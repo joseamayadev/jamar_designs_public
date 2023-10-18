@@ -879,7 +879,6 @@ let telas = [
 ]
 
 
-
 window.addEventListener("click", (e) => {
     e.preventDefault()
     let productName = e.target.dataset.productName;
@@ -900,6 +899,33 @@ window.addEventListener("click", (e) => {
         
         renderProductPage(productObject)
     }
+
+
+    if(e.target.classList.contains("sumar-valores")) {
+        let elemento = e.target.parentNode.querySelector(".qty-product");
+        let cantidad = parseInt(elemento.textContent)
+        cantidad++;
+        elemento.textContent = cantidad;
+        document.querySelectorAll(".calc-container").forEach(elemento => {
+            let precioInsumo = parseFloat(elemento.dataset.precio);
+            let unidadInsumo = parseFloat(elemento.dataset.cantidad);
+            let total = (precioInsumo * unidadInsumo) * cantidad;
+            totalFabricacion.textContent = total.toFixed(0);
+          })
+    }
+    if(e.target.classList.contains("restar-valores")) {
+        let elemento = e.target.parentNode.querySelector(".qty-product");
+        let cantidad = parseInt(elemento.textContent)
+        cantidad < 2 ? 1 : cantidad--;
+        elemento.textContent = cantidad;
+        document.querySelectorAll(".calc-container").forEach(elemento => {
+            let precioInsumo = parseFloat(elemento.dataset.precio);
+            let unidadInsumo = parseFloat(elemento.dataset.cantidad);
+            let total = (precioInsumo * unidadInsumo) * cantidad;
+            totalFabricacion.textContent = total.toFixed(0);            
+
+          })
+    }
 })
 
 
@@ -917,13 +943,14 @@ function renderProductPage(product){
         <div class="container-materiales border h-100 rounded p-4">
             <div class="row">
                 <h1 class="fs-4 text-dark">${productName}</h1>
+                <p><b>Costo:</b> <span id="totalFabricacion">1</span> </p>
             </div>
             <div class="row d-flex mt-2 align-items-center">
-            <button class="btn col-md-1">
+            <button class="btn col-md-1 restar-valores">
                 <i class="bi bi-dash-circle-fill fs-2"></i>
             </button>
-            <div class="col-md-2 text-center">Cantidads</div>
-            <button class="btn col-md-1">
+            <div class="col-md-2 text-center qty-product">1</div>
+            <button class="btn col-md-1 sumar-valores">
                 <i class="bi bi-plus-circle-fill fs-2"></i>
             </button>
         </div>
@@ -943,7 +970,7 @@ function renderMateriales(objetoMateriales, productSku) {
     console.log(productSku)
     let renderMaterialesList = document.querySelector(".render-materiales")
     const elementosFiltrados = espumas.filter(espumas => espumas.sku == productSku);
-    const elementosFiltradosTelas = telas.filter(espumas => espumas.sku == productSku);    
+    const elementosFiltradosTelas = telas.filter(espumas => espumas.sku == productSku);   
 
     elementosFiltrados.forEach(element => {
         //verificar el nombre de la espuma
@@ -953,20 +980,21 @@ function renderMateriales(objetoMateriales, productSku) {
             <div class="card" style="width: 7rem;">
             <ul class="list-group list-group-flush d-flex justify-content-center text-center">
                 <img class="rounded-pill" src="${espumasFiltradas[0].imageEsponja}" />
-                <h5 class="text-start material-text-size mt-2"> ${espumasFiltradas[0].descripcion} </h5>
+                <h5 class="text-start material-text-size mt-2 calc-container" data-cantidad="${element.unidad}" data-precio="${espumasFiltradas[0].precio}"> ${espumasFiltradas[0].descripcion}#1 </h5>
             </ul>
           </div>
         `
     }});
     elementosFiltradosTelas.forEach(element => {
+        console.log(element)
         //verificar el nombre de la espuma
         let telasFiltradas = preciosInsumos.filter(preciosInsumos => preciosInsumos.codigo == element.material);
         if (element.unidad > 0) {
             renderMaterialesList.innerHTML += `
             <div class="card" style="width: 7rem;">
             <ul class="list-group list-group-flush d-flex justify-content-center text-center">
-                <img class="rounded-pill" src="${telasFiltradas[0].imageEsponja}" />
-                <h5 class="text-start material-text-size mt-2"> ${telasFiltradas[0].descripcion} </h5>
+                <img class="rounded-pill" src="${telasFiltradas[0].imageEsponja}"/>
+                <h5 class="text-start material-text-size mt-2 calc-container" data-cantidad="${element.unidad}" data-precio="${telasFiltradas[0].precio}"> ${telasFiltradas[0].descripcion}#2 </h5>
             </ul>
           </div>
         `
@@ -978,6 +1006,9 @@ window.addEventListener('popstate', function(event) {
     // Aquí puedes ejecutar tu código cuando el usuario hace clic en "Atrás"
     window.location.href ="/";
   });
+
+
+ 
 
 
 

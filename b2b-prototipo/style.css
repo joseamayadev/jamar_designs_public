@@ -10,3 +10,12 @@
     width: 10ch ;
     font-size: 11px;
 }
+
+.sumar-valores *,
+.restar-valores * {
+    pointer-events: none;
+}
+
+.qty-product {
+    font-size: 30px;
+}
